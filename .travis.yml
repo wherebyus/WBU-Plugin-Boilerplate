@@ -27,7 +27,7 @@ before_script:
     - export WP_PLUGIN_SHORTNAME='plugin-name'
 
     # Install WP-CLI + WordPress
-    - source ./setup-travis.sh
+    - source ./bin/setup-travis.sh
 
     # Start up a web server.
     - php -S "$WP_CEPT_SERVER" >/dev/null 2>&1 &
