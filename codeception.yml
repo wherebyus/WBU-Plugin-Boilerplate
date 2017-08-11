@@ -1,0 +1,25 @@
+actor: Tester
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: tests/_envs
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+settings:
+    bootstrap: _bootstrap.php
+    colors: true
+    memory_limit: 1024M
+modules:
+    config:
+        WPWebDriver:
+            url: 'http://miami.wbu.dev'
+            browser: chrome
+            port: 4444
+            restart: true
+            wait: 0
+            adminUsername: wbu
+            adminPassword: '#W!9lN^UKh#$36A7'
+            adminUrl: /wp-admin
