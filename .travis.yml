@@ -24,7 +24,7 @@ before_script:
     - export WP_CEPT_SERVER='127.0.0.1:8888'
 
     # change this with the name of your plugin folder
-    - export WP_PLUGIN_SHORTNAME='plugin-name'
+    - export WP_PLUGIN_NAME='plugin-name'
 
     # Install WP-CLI + WordPress
     - source ./bin/setup-travis.sh
