@@ -38,7 +38,7 @@ before_script:
 
     # Install Codeception and WP Browser using a travis specific composer.json.
     # Doing this last gives the webdriver and server time to start up.
-    - composer install -d $BASE_PATH/$WP_PLUGIN_NAME --prefer-dist
+    - composer install -d $BASE_PATH --prefer-dist
 
 script:
     - vendor/bin/codecept run --env travis
