@@ -24,10 +24,10 @@ before_script:
     - export WP_CEPT_SERVER='127.0.0.1:8888'
 
     # change this with the name of your plugin folder
-    - export WP_PLUGIN_NAME='plugin-name'
+    - export WP_PLUGIN_NAME='WBU-Plugin-Boilerplate'
 
     # Install WP-CLI + WordPress
-    - source ./bin/setup-travis.sh
+    - source ./tests/bin/setup-travis.sh
 
     # Start up a web server.
     - php -S "$WP_CEPT_SERVER" >/dev/null 2>&1 &
