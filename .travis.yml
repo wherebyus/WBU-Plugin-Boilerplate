@@ -36,9 +36,11 @@ before_script:
     # Start up the webdriver.
     - phantomjs --webdriver=4444 >/dev/null 2>&1 &
 
+    - cd $BASE_PATH
+    
     # Install Codeception and WP Browser using a travis specific composer.json.
     # Doing this last gives the webdriver and server time to start up.
-    - composer install -d $BASE_PATH --prefer-dist
+    - composer install --prefer-dist
 
 script:
     - vendor/bin/codecept run --env travis
