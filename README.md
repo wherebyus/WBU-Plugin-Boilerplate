@@ -24,10 +24,13 @@ Make sure you are using frodo, and it's up via `vagrant up`.
 
 ### Testing via travis-ci
 
+```
 docker run --name travis-debug -dit travisci/ci-garnet:packer-1499451976 /sbin/init
 docker exec -it travis-debug bash -l
 su - travis
 cd builds
 git clone --depth=50 --branch=`[YOUR BRANCH]` `[YOUR REPO]`
+```
 
-And then follow along the /tests/bin/wbu-travis.sh script
+And then follow along the `/tests/bin/wbu-travis.sh` script
+
